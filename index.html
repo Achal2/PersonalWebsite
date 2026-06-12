@@ -10,7 +10,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/styles.css?v=copy-2" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -21,8 +21,6 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -49,7 +47,7 @@
             <li class="nav-item nav-img">
               <a
                 href="https://bulbapedia.bulbagarden.net/wiki/Dragonite_(Pokémon)"
-                ><img src="src/movdragonite.gif" class="img-fluid"
+                ><img src="src/movdragonite.gif" class="img-fluid" alt="Dragonite"
               /></a>
             </li>
           </ul>
@@ -67,8 +65,9 @@
             <p class="accent-text">.</p>
           </h1>
           <p class="header-about">
-           Aspiring Software Engineer. AI Graduate Student @ Northeastern University.
-            Passionate solution seeker.
+            <span>Aspiring Software Engineer.</span>
+            <span>MS AI Student @ Northeastern University.</span>
+            <span>Passionate solution seeker.</span>
             <!--  ,with a dual Bachelor's in Computer Science and Business Analytics(BAIT) from Rutgers University.-->
           </p>
           <a href="#experiences">
@@ -88,17 +87,17 @@
           <div class="card-1 flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="enac-img" src="src/enactws.PNG" alt="Avatar" />
+                <img class="enac-img" src="src/gm-cruise-av.png?v=5" alt="General Motors and Cruise autonomous vehicle graphic" />
               </div>
               <div class="flip-card-back">
-                  <h4>Rutgers Enactus, New Beginnings
+                  <h4>GM / Cruise - AI/ML Software Engineering Intern</h4>
                   <p class="card-2-text">
-                      Implemented new login feature using backend server software while 
-                      leading initiative to form Advanced Programming Interfaces that are 
-                      connected to servers for New Beginnings. Collaborated with various team 
-                      members to compile presentation elements for the Enactus National competition 
-                      through created video content and led team of presenters in preparation for 
-                      the competition.
+                    Work on a Simulation Evaluation team for autonomous vehicles, building tools
+                    that make AV scenario review faster and easier to trust. Built a multimodal
+                    vision-language validation pipeline that turns road and simulation video into
+                    side-by-side review artifacts, plus fidelity benchmarks for vehicle behavior,
+                    road geometry, traffic controls, and visual defects. Helped triage 2,000
+                    scenarios, surface 100 priority simulations, and reduce review effort by 95%.
                   </p>
                 </div>
             </div>
@@ -106,17 +105,17 @@
           <div class="card-2 flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="pvg-img" src="src/pvws.PNG" alt="Avatar" />
+                <img class="pvg-img" src="src/multilingual-spanish.png?v=3" alt="Multilingual span identification graphic" />
               </div>
               <div class="flip-card-back">
-                <h4>Peace Village - Web Developer, Event Coordinator 
+                <h4>Cross-Lingual Claim Span Identification</h4>
                 
                 <p class="card-2-text">
-                  Orchestrated Peace in the Park event in July 2021
-                   and 2022 while also maintaining event website using HTML/CSS.
-                    Organized and furthered 2 retreats while making accommodations for over 300
-                     retreat guests. Retreat responsibilities also included managing room accommodations
-                      and delegating food services.
+                  Built a multilingual NLP pipeline to find exact claim spans in English,
+                  Spanish, and French text using BIO token classification. Compared CRFs,
+                  XLM-RoBERTa with LoRA, transformer-plus-CRF hybrids, and RoBERTa baselines.
+                  XLM-RoBERTa with LoRA performed best, while CRF decoding struggled with rare
+                  claim-start tokens under heavy class imbalance.
                 </p>
               </div>
             </div>
@@ -129,7 +128,7 @@
                 <img class="prereq-img" src="src/huffman.PNG" alt="Avatar" />
               </div>
               <div class="flip-card-back">
-                <h4>Huffman Coding Algorithm(Java)
+                <h4>Huffman Coding Algorithm(Java)</h4>
                 <p class="card-3-text">
                   Enforced a data compression algorithm, Huffman coding algorithm, 
                   to decode and code files. Priority queues and search trees were 
@@ -142,21 +141,17 @@
           <div class="card-4 flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="hca-img" src="src/prereqws.PNG" alt="Avatar" />
+                <img class="hca-img" src="src/pokemon-fire-red.png" alt="Pokemon FireRed project graphic" />
               </div>
               <div class="flip-card-back">
-                <h4>Prerequisite Course Checker(Java)
+                <h4>Curiosity-Driven Pokemon FireRed Agent</h4>
                 <p class="card-4-text">
-                  Executed a course prerequisite checker for the Rutgers
-                  Computer Science department by utilizing Depth-first Search
-                  Algorithm to locate all prerequisites of specific courses by
-                  looking at elgibility and guiding them with example schedules
-                  for future semesters to satisfy any given courses. This was
-                  able to be done by employing priority queues, linkedlists, and
-                  hash tables to find courses and to align with the Rutgers
-                  Computer Science structure. Along with the continued
-                  utilization via application of HashMap and Graph data
-                  structures.
+                  Developed an autonomous Pokemon FireRed agent using a Lua-Python pipeline with
+                  the BizHawk emulator. The agent reads GBA memory, switches between overworld and
+                  battle contexts, and chooses actions through interpretable perceptrons, Hebbian
+                  learning, curiosity-driven exploration, and Markov matching from human demos.
+                  In evaluation, it navigated 11 maps from Pallet Town into Viridian Forest and
+                  reached a 77.8% battle win rate.
                 </p>
               </div>
             </div>
@@ -169,32 +164,36 @@
     </div>
 
     <!-- ABOUT ME SECTION -->
-    <div id = "aboutme" div class="aboutme section">
+    <div id="aboutme" class="aboutme section">
 
       <div class="cards">
         <h3 class="grid-tagline">Hello!</h3>
         <h1 class="grid-header">A bit about me</h1>
         <div class="card card__one">
           <div class="card__bg"></div>
-          <img class="card__img" src="src/blue1.PNG" />
+          <img class="card__img" src="src/blue1.PNG" alt="" />
         </div>
         <div class="card card__two">
           <div class="card__bg"></div>
-          <img class="card__img" src="src/dog2.PNG" />
+          <img class="card__img" src="src/dog2.PNG" alt="" />
         </div>
         <div class="card card__three">
           <div class="card__bg"></div>
-          <img class="card__img" src="src/brown3.PNG" />
+          <img class="card__img" src="src/brown3.PNG" alt="" />
         </div>
       </div>
       
       <div class="about-text-container">
         <h2 class="about-header">About me!</h2>
-        <p class="about-paragraph" style="font-size: 12px; text-align:justify;">
-            My name is Achal(Uh-ch-uhl) and I’m currently pursuing a Master’s in Artificial Intelligence at Northeastern University. I graduated from Rutgers Business School with a double major in Computer Science & Business Analytics and Information Technology (BAIT), where I developed a deep appreciation for the intersection of technology and business. My passion for leveraging data to drive analytical decision-making is rooted in the many lessons my dad shared with me. As an only child, my dad has been both a mentor and a friend, instilling in me a competitive spirit and a relentless drive to excel in whatever I choose to do. His enthusiasm for programming sparked my own, as he introduced me to Java and SQL, fueling my desire to delve deeper into the world of Computer Science.
-I’ve had the opportunity to work on projects that bridge the gap between theory and real-world application. At People Tech Group, I played a crucial role in automating infrastructure as code (IaC) generation using Amazon Bedrock and AWS CloudFormation, significantly reducing manual configuration time. This experience not only honed my technical skills in AI and cloud services but also deepened my understanding of how technology can streamline complex business processes. Similarly, my internship at KBC Bank allowed me to optimize SQL queries and automate system processes, reinforcing my commitment to efficiency and precision in every task I undertake.
-My projects reflect my passion for solving real-world problems through technology. Whether it’s developing AI-driven solutions for auto insurance underwriting or creating secure, role-based access control systems for sensitive data, I am driven by the desire to make a meaningful impact.
+        <p class="about-paragraph">
+            My name is Achal (Uh-ch-uhl), and I’m currently pursuing a Master’s in Artificial Intelligence at Northeastern University, with plans to graduate in Spring 2027. I graduated from Rutgers Business School with a double major in Computer Science and Business Analytics & Information Technology (BAIT), where I started to appreciate how much stronger technology becomes when it is built with both technical depth and real-world context.
+
+My passion for solving problems with data and software is rooted in the lessons my dad shared with me growing up. As an only child, my dad has been both a mentor and a friend, instilling in me a competitive spirit and a drive to keep improving at whatever I choose to do. His enthusiasm for programming sparked my own, as he introduced me to Java and SQL and helped turn curiosity into something I could build with.
+
+Lately, my work has centered on applied AI systems, model evaluation, and software that connects research ideas to real-world use. At General Motors and Cruise, I work on a Simulation Evaluation team for autonomous vehicles, building tools that help review simulation quality, compare road and sim video, and surface the scenarios that need attention most. I’ve also worked on multilingual claim span identification with transformer models, and on an autonomous Pokemon FireRed agent that combines emulator memory, interpretable perceptrons, curiosity-driven exploration, and demonstration matching.
+
 Outside of my professional pursuits, I enjoy playing basketball, cheering for the New York Jets, hiking, learning about cars, and spending quality time with my family. My journey is one of continuous learning, and I look forward to the opportunities ahead. Feel free to explore my resume for a detailed overview of my experiences and skills!
+        </p>
       </div>
       
 
@@ -210,22 +209,22 @@ Outside of my professional pursuits, I enjoy playing basketball, cheering for th
         
         <!-- <img class="footer-img" src="src/footerachal.PNG" alt="" /> -->
           <h1 class="footer-intro">Feel free to contact me!</h1>
-          <h4 class="footer-paragraph">I would love to discuss any Artficial Intelligence or Software opportunities in more detail, so feel free to reach out. Thank you for visiting my website, and I look forward to hearing from you! </h4>
+          <h4 class="footer-paragraph">I would love to discuss any Artificial Intelligence or Software opportunities in more detail, so feel free to reach out. Thank you for visiting my website, and I look forward to hearing from you!</h4>
           
       </div>
       <div class="footer-socials-container">
 
-          <a href="src/Achalresume.pdf" class="resume" target="_blank">
+          <a href="src/Achalresume.pdf?v=2026-06" class="resume" target="_blank">
             <img class="resume-img" src="src/resume.png" alt="Check out my resume!" />
           </a>
           <a href="https://www.instagram.com/achalmukkapati/" class="instagram" target="_blank">
-            <img class="insta-img" src="src/instagram.png" alt="" />
+            <img class="insta-img" src="src/instagram.png" alt="Instagram" />
           </a>
           <a href="http://www.linkedin.com/in/achal-mukkapati" class="instagram" target="_blank">
-            <img class="linkedin-img" src="src/linkedin.png" alt="" />
+            <img class="linkedin-img" src="src/linkedin.png" alt="LinkedIn" />
           </a>
           <a href="mailto:achalmukkapati@gmail.com?subject = Contact from Portfolio" class="mail">
-            <img class="mail-img" src="src/mail.png" alt="" />
+            <img class="mail-img" src="src/mail.png" alt="Email" />
           </a>
           
 
@@ -233,6 +232,6 @@ Outside of my professional pursuits, I enjoy playing basketball, cheering for th
 
     </div> 
 
-    <script src="src/index.js" type="text/javascript"></script>
+    <script src="src/index.js?v=copy-2" type="text/javascript"></script>
   </body>
 </html>
