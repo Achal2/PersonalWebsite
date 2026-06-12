@@ -10,7 +10,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/styles.css?v=copy-2" />
+    <link rel="stylesheet" href="src/styles.css?v=box-fix-2" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -87,7 +87,11 @@
           <div class="card-1 flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="enac-img" src="src/gm-cruise-av.png?v=5" alt="General Motors and Cruise autonomous vehicle graphic" />
+                <div class="gm-card-graphic" aria-label="General Motors and Cruise autonomous vehicle graphic">
+                  <img class="gm-card-logo" src="src/gm-logo-trimmed.png" alt="General Motors logo" />
+                  <img class="gm-card-cruise" src="src/cruise-wordmark.png" alt="Cruise wordmark" />
+                  <img class="gm-card-car" src="src/corvette-trimmed.png" alt="Red car" />
+                </div>
               </div>
               <div class="flip-card-back">
                   <h4>GM / Cruise - AI/ML Software Engineering Intern</h4>
@@ -105,7 +109,9 @@
           <div class="card-2 flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="pvg-img" src="src/multilingual-spanish.png?v=3" alt="Multilingual span identification graphic" />
+                <div class="language-card-graphic">
+                  <img class="pvg-img" src="src/multilingual-spanish.png?v=4" alt="Multilingual span identification graphic" />
+                </div>
               </div>
               <div class="flip-card-back">
                 <h4>Cross-Lingual Claim Span Identification</h4>
@@ -232,6 +238,6 @@ Outside of my professional pursuits, I enjoy playing basketball, cheering for th
 
     </div> 
 
-    <script src="src/index.js?v=copy-2" type="text/javascript"></script>
+    <script src="src/index.js?v=box-fix-2" type="text/javascript"></script>
   </body>
 </html>
